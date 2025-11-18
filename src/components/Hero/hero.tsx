@@ -26,22 +26,21 @@ export default function Hero({
             </div>
 
             <div className="relative z-10 w-full max-w-2xl mx-auto px-4 md:px-8">
-                <div className="bg-white/0 p-8 md:p-12 shadow-xl border-16 border-white/95">
-                    {/* Heading */}
-                    <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 text-center leading-tight text-balance">
+                <div className="bg-white/0 p-7 md:p-12 shadow-xl border-16 border-white/95 !space-y-6">
+
+                    <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white/90 text-center leading-tight">
                         {heading}
                     </h1>
 
-                    {/* Paragraph */}
-                    <p className="text-base md:text-lg text-gray-700 text-center mt-4 md:mt-6 leading-relaxed text-pretty">
+                    <p className="text-base md:text-lg text-white/90 text-center leading-relaxed font-semibold">
                         {paragraph}
                     </p>
 
-                    <div className="flex justify-center mt-8">
+                    <div className="flex justify-center">
                         <a href={buttonLink}>
                             <Button
                                 size="lg"
-                                className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-semibold rounded-full px-8 transition-all duration-300 transform hover:scale-105"
+                                className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-semibold rounded-full px-8 md:px-12 transition-all duration-300 transform hover:scale-105 cursor-pointer text-lg"
                             >
                                 {buttonText}
                             </Button>
@@ -49,6 +48,7 @@ export default function Hero({
                     </div>
                 </div>
             </div>
+
         </section>
     );
 }

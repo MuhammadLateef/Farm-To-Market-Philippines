@@ -1,15 +1,19 @@
 import Navbar from "@/components/Navbar/navbar";
 import { Hero } from "@/components/Hero/index";
-
+import { WhoAreWeSection } from '@/components/who-are-we/who-are-we-section'
+import { HowItWorksSection } from '@/components/how-it-works/how-it-works-section'
+import { BuyAndSellSection } from '@/components/Buy-and-Sell/by-and-sell-section'
+import  Footer  from '@/components/footer/footer'
 export default function Home() {
   return (
     <main>
       <Navbar />
       <Hero />
-      <div className="p-8 bg-gray-50">
-        <h2 className="text-2xl font-bold text-gray-800">Our Mission</h2>
-        <p className="text-gray-600 mt-2">Helping our local farmers grow and succeed</p>
-      </div>
+      <WhoAreWeSection />
+      <HowItWorksSection />
+      <BuyAndSellSection />
+      <Footer />
+      
     </main>
   );
 }

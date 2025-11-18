@@ -24,7 +24,7 @@ export default function NavLinks({ pathname }: NavLinksProps) {
             key={link.href}
             href={link.href}
             className={cn(
-              'text-sm font-medium transition-colors relative',
+              'sm:text-base text-sm font-bold transition-colors relative tracking-wider',
               isActive
                 ? 'text-gray-900 font-bold'
                 : 'text-gray-500 hover:text-gray-900'
