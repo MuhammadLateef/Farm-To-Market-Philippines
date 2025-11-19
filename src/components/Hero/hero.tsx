@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-
+import bgHero from "@/assets/home/header.jpg";
 interface HeroProps {
     heading?: string;
     paragraph?: string;
@@ -18,7 +18,7 @@ export default function Hero({
             <div
                 className="absolute inset-0 bg-cover bg-center bg-no-repeat"
                 style={{
-                    backgroundImage: "url('/assets/home/header.jpg')",
+                    backgroundImage:  `url(${bgHero.src})`,
                 }}
             >
                 {/* Subtle overlay for better text readability */}

@@ -1,10 +1,13 @@
 import Link from 'next/link'
 import { Navigation } from './navigation'
 import Image from 'next/image'
-import Logo1 from '../../../public/assets/logo-med.png'
+import Logo1 from '../../assets/logo-med.png'
+import bgFooter from "../../assets/home/footer-bg.jpg"
 export default function Home() {
     return (
-        <div className="flex flex-col min-h-screen bg-[url('/assets/home/footer-bg.jpg')] md:bg-contain bg-cover bg-center bg-no-repeat ">
+        <div className="flex flex-col min-h-screen bg-[url('/assets/home/footer-bg.jpg')] md:bg-contain bg-cover bg-center bg-no-repeat " style={{
+            backgroundImage: `url(${bgFooter.src})`,
+        }}>
             {/* Header Section with Logo and Hero Content */}
             <div className="flex-1 flex flex-col items-center justify-center px-4 md:my-24 md:py-24 py-16 my-16 text-center">
 

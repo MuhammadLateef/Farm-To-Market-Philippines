@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Menu, X } from 'lucide-react';
-import NavLogo from "../../../public/assets/logo-top.jpg";
+import NavLogo from "../../assets/logo-top.jpg";
 import NavLinks from './nav-links';
 import NavMobile from './nav-mobile';
 import Image from 'next/image';
@@ -16,7 +16,7 @@ function Navbar() {
     const toggleMenu = () => setIsOpen(!isOpen);
 
     return (
-        <nav className="bg-white border-b border-gray-200">
+        <nav className="bg-white border-b border-gray-200 shadow-lg">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
                 <div className="flex justify-between items-center h-30">
                     {/* Logo */}
