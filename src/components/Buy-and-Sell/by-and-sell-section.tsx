@@ -1,69 +1,79 @@
 'use client'
 
 import { ProductCard } from './product-card'
+import bsGrains from '@/assets/buy-sell/bs-grains.jpg';
+import bsLegumes from '@/assets/buy-sell/bs-legumes.jpg';
+import bsFruits from '@/assets/buy-sell/bs-fruits.jpg';
+import bsVeggies from '@/assets/buy-sell/bs-veggies.jpg';
+import bsAnimals from '@/assets/buy-sell/bs-animals.jpg';
+import bsFertilizers from '@/assets/buy-sell/bs-fertilizers.jpg';
+import hydroponics from '@/assets/buy-sell/hydroponics.jpg';
+import bsMachines from '@/assets/buy-sell/bs-machines.jpg';
+import bsFarmland from '@/assets/buy-sell/bs-farmland.jpg';
+import bsTools from '@/assets/buy-sell/bs-tools.jpg';
 
 const products = [
   {
     id: 1,
     name: 'Grains',
     category: 'Rice, Corn, Wheat, Barley, Oats',
-    image: '/assets/home/buy-sell/bs-grains.jpg',
+    image: bsGrains,
   },
   {
     id: 2,
     name: 'Nuts & Legumes',
     category: 'Soybeans, Peanuts, Peas, Lentils',
-    image: '/assets/home/buy-sell/bs-legumes.jpg',
+    image: bsLegumes,
   },
   {
     id: 3,
     name: 'Fruits',
     category: 'Mango, Banana, Coconut, Apple, Pineapple',
-    image: "/assets/home/buy-sell/bs-fruits.jpg"
+    image: bsFruits,
   },
   {
     id: 4,
     name: 'Vegetables',
     category: 'Okra, Eggplant, Carrot, Celery, Lettuce',
-    image: '/assets/home/buy-sell/bs-veggies.jpg',
+    image: bsVeggies,
   },
   {
     id: 5,
     name: 'Livestock',
     category: 'Cattle, Pigs, Chicken, Goat, Carabao',
-    image: '/assets/home/buy-sell/bs-animals.jpg',
+    image: bsAnimals,
   },
   {
     id: 6,
     name: 'Solutions',
     category: 'Nutrients, Fertilizers, etc.',
-    image: '/assets/home/buy-sell/bs-fertilizers.jpg',
+    image: bsFertilizers,
   },
   {
     id: 7,
     name: 'Equipment',
     category: 'Hydraulic Systems, Pals, etc.',
-    image: '/assets/home/buy-sell/hydroponics.jpg',
+    image: hydroponics,
   },
   {
     id: 8,
     name: 'Machinery',
     category: 'Grain Harvester, Tractor, etc.',
-    image: '/assets/home/buy-sell/bs-machines.jpg',
+    image: bsMachines,
   },
-    {
+  {
     id: 9,
     name: 'Land for Sale',
     category: 'Farm Lots, Fish Ponds, Piggeries, etc.',
-    image: '/assets/home/buy-sell/bs-farmland.jpg',
+    image: bsFarmland,
   },
-    {
+  {
     id: 10,
     name: 'Gardening Tools',
     category: 'Shovels, Rakes, Gloves, Boots, Watering Cans, etc.',
-    image: '/assets/home/buy-sell/bs-tools.jpg',
+    image: bsTools,
   },
-]
+];
 
 export function BuyAndSellSection() {
   return (
@@ -75,7 +85,7 @@ export function BuyAndSellSection() {
         </h2>
 
         {/* Products Grid */}
-        <div className="grid grid-cols md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10">
           {products.map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}

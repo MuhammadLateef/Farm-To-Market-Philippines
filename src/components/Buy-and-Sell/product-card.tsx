@@ -7,7 +7,7 @@ interface ProductCardProps {
     id: number
     name: string
     category: string
-    image: string
+    image: string | any  // ✅ Add StaticImageData type
   }
 }
 

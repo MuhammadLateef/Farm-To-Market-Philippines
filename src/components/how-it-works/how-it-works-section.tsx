@@ -1,25 +1,27 @@
 "use client";
 
 import Image from "next/image";
-
+import iconJoin from "@/assets/home/icon-join.png";
+import iconTrack from "@/assets/home/icon-track.png";
+import iconRoi from "@/assets/home/icon-roi.png"; 
 const steps = [
   {
     id: 1,
-    icon: "/assets/home/icon-join.png",
+    icon: iconJoin,
     title: "Invest With Us",
     description:
       "Partner with us by investing in our farms. We will use your investment to finance rice, corn and banana plantations, livestock farms, or to purchase farm machines.",
   },
   {
     id: 2,
-    icon: "/assets/home/icon-track.png",
+    icon: iconTrack,
     title: "Track Profit",
     description:
       "Receive monthly updates regarding your investment. We will regularly send you information and photos of the farm where we invested your money in.",
   },
   {
     id: 3,
-    icon: "/assets/home/icon-roi.png",
+    icon: iconRoi,
     title: "Return of Investment",
     description:
       "Earn 5% of your investment every quarter. If you invest P10,000, you will receive P500 interest every 3 months and your investment after the 12th month.",

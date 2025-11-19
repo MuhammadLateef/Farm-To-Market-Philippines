@@ -1,20 +1,20 @@
 'use client'
 
 import { FeatureCard } from './feature-card'
-import image1 from '../../../public/assets/home/rice.jpg'
-import image2 from '../../../public/assets/home/field.jpg'
+import image1 from '@/assets/home/field.jpg'
+import image2 from '@/assets/home/rice.jpg'
 export function WhoAreWeSection() {
     return (
         <section className="w-full py-16 mx-auto flex justify-center">
-            <div className="max-w-[85rem] mx-auto px-6 lg:px-8 flex flex-col justify-center h-full">
+            <div className="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col justify-center h-full">
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-16">
                     {/* Left Column - Text Content */}
                     <div className="flex flex-col justify-start space-y-6">
-                        <h1 className="text-2xl md:text-3xl font-semibold text-[#272727] mt-[15px] !mb-6">
+                        <h1 className="text-2xl md:text-3xl font-semibold text-[#272727] mt-[15px] mb-6">
                             Who Are We?
                         </h1>
 
-                        <div className="!space-y-4 text-base md:text-lg leading-relaxed text-muted-foreground text-justify">
+                        <div className="space-y-4 text-base md:text-lg leading-relaxed text-muted-foreground text-justify">
                             <p>
                                 Farm To Market Philippines is an agri-tech platform where members can invest in farming to increase local food production and receive profits from their investments. Members can also sell their farm-related products through this platform.
                             </p>
@@ -33,13 +33,13 @@ export function WhoAreWeSection() {
 
                     <FeatureCard
                         title="INCREASE FOOD PRODUCTION"
-                        imageSrc="/assets/home/field.jpg"
+                        imageSrc={image1.src}
                         imageAlt="Rice grains in burlap sack"
                     />
 
                     <FeatureCard
                         title="LEND MONEY TO FARMERS"
-                        imageSrc="/assets/home/rice.jpg"
+                        imageSrc={image2.src}
                         imageAlt="Rice paddy field"
                     />
                 </div>
