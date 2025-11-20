@@ -1,6 +1,7 @@
 // pages/sell.tsx
 import Hero from '@/components/Hero';
 import bgHero from "@/assets/home/header.jpg";
+import Link from 'next/link';
 const SellPage = () => {
     return (
         <div>
@@ -25,7 +26,7 @@ const SellPage = () => {
                             Register for Free
                         </button>
                     </a>
-                    <a href="#" className='my-2 hover:text-green-500 text-green-600'>Already a member? Click here to log in to your shop dashboard.</a>
+                    <Link href="/my-account" className='my-2 hover:text-green-500 text-green-600'>Already a member? Click here to log in to your shop dashboard.</Link>
                 </div>
             </div>
         </div>
