@@ -1,6 +1,6 @@
 'use client'
 
-import { ProductCard } from './product-card'
+import  ProductCard  from './product-card'
 import bsGrains from '@/assets/buy-sell/bs-grains.jpg';
 import bsLegumes from '@/assets/buy-sell/bs-legumes.jpg';
 import bsFruits from '@/assets/buy-sell/bs-fruits.jpg';
@@ -75,7 +75,7 @@ const products = [
   },
 ];
 
-export function BuyAndSellSection() {
+function BuyAndSellSection() {
   return (
     <section className="w-full py-4 px-4 md:px-6 lg:px-8 bg-background">
       <div className="max-w-7xl mx-auto">
@@ -83,7 +83,6 @@ export function BuyAndSellSection() {
         <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-12">
           Buy & Sell
         </h2>
-
         {/* Products Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10">
           {products.map((product) => (
@@ -94,3 +93,5 @@ export function BuyAndSellSection() {
     </section>
   )
 }
+
+export default BuyAndSellSection;

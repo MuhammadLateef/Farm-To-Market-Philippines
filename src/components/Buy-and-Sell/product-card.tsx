@@ -11,7 +11,7 @@ interface ProductCardProps {
   }
 }
 
-export function ProductCard({ product }: ProductCardProps) {
+export default function ProductCard({ product }: ProductCardProps) {
   return (
     <div className="flex flex-col items-center text-center space-y-3 hover:scale-105 transition-transform duration-300">
       {/* Product Image Circle */}
@@ -36,3 +36,6 @@ export function ProductCard({ product }: ProductCardProps) {
     </div>
   )
 }
+
+
+// export default ProductCard;
