@@ -5,11 +5,11 @@ import Logo1 from '../../assets/logo-med.png'
 import bgFooter from "../../assets/home/footer-bg.jpg"
 export default function Home() {
     return (
-        <div className="flex flex-col min-h-screen bg-[url('/assets/home/footer-bg.jpg')] md:bg-contain bg-cover bg-center bg-no-repeat " style={{
+        <div className="flex flex-col h-auto bg-cover bg-center bg-no-repeat " style={{
             backgroundImage: `url(${bgFooter.src})`,
         }}>
             {/* Header Section with Logo and Hero Content */}
-            <div className="flex-1 flex flex-col items-center justify-center px-4 md:my-24 md:py-24 py-16 my-16 text-center">
+            <div className="flex-1 flex flex-col items-center justify-center px-4 md:my-6 md:py-18 py-16 my-16 text-center">
 
                 {/* Logo */}
                 <div className="mb-5">
