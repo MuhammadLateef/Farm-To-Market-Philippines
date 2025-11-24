@@ -26,7 +26,7 @@ export default function Hero({
             </div>
 
             <div className="relative z-10 w-full max-w-2xl mx-auto px-6 md:px-8">
-                <div className="bg-white/0 p-7 md:p-12 shadow-xl border-16 border-white/95 space-y-6">
+                <div className="bg-white/0 p-7 md:p-12 shadow-xl border-14 border-white/95 space-y-6">
                     <h1 className="text-3xl md:text-4xl lg:text-[42px] my-2 lg:my-5 font-bold text-white text-center leading-tight">
                         {heading}
                     </h1>
