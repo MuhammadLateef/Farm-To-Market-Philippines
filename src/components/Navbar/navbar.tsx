@@ -26,7 +26,7 @@ function Navbar() {
                         height={150}
                         src={NavLogo}
                         alt='logo'
-                        className="cursor-pointer object-contain h-20 w-auto"
+                        className="cursor-pointer object-contain md:h-20 sm:h-16 h-12 w-auto"
                     />
 
                     {/* Desktop Navigation */}

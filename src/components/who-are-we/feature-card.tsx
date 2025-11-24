@@ -8,8 +8,8 @@ interface FeatureCardProps {
 
 export function FeatureCard({ title, imageSrc, imageAlt }: FeatureCardProps) {
   return (
-    <div className="flex flex-col space-y-3">
-      <h3 className="text-lg font-semibold tracking-wide text-foreground !mb-6 mt-[15px]">
+    <div className="flex flex-col  ">
+      <h3 className="text-lg font-semibold tracking-wide text-[#272727] mb-6 mt-[15px]">
         {title}
       </h3>
 
@@ -20,7 +20,7 @@ export function FeatureCard({ title, imageSrc, imageAlt }: FeatureCardProps) {
           alt={imageAlt}
           width={400}
           height={400}
-          className="relative z-10 w-full h-full lg:h-[400px]"
+          className="relative z-10 w-full h-full lg:h-[350px]"
         />
       </div>
      

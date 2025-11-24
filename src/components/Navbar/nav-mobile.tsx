@@ -29,10 +29,10 @@ export default function NavMobile({ pathname, onClose }: NavMobileProps) {
               href={link.href}
               onClick={onClose}
               className={cn(
-                'block px-4 py-3 text-sm font-medium rounded-md transition-colors',
+                'block px-4 py-3 text-[15px] font-bold rounded-md transition-colors',
                 isActive
-                  ? 'bg-green-50 text-gray-900 font-bold border-l-4 border-green-600'
-                  : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'
+                  ? 'bg-green-50 text-[#272727] font-bold border-l-4 border-green-600'
+                  : 'text-[#999999] hover:bg-gray-50 hover:text-[#272727]'
               )}
             >
               {link.label}

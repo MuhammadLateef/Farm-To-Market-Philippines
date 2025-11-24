@@ -34,12 +34,11 @@ export default function BlogPage() {
         <main className="min-h-screen bg-background">
             {/* Header */}
             <div className=" mt-6 text-center">
-                <h1 className="text-5xl font-semibold tracking-tight text-foreground mt-4 mb-4">The Blog</h1>
-                <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
+                <h1 className="lg:text-5xl md:text-3xl  text-2xl font-semibold tracking-tight text-foreground mt-4 mb-4">The Blog</h1>
+                <p className="  max-w-2xl mx-auto sm:text-lg text-base sm:px-0 px-8">
                     Welcome to our little corner of the Internet. Kick your feet up and stay a while.
                 </p>
             </div>
-
             {/* Blog Posts */}
             <div className="max-w-7xl mx-auto px-4 pt-6 pb-16">
                 <div className="space-y-12">
@@ -69,11 +68,11 @@ export default function BlogPage() {
                             </Link>
 
                             {/* Content */}
-                            <div className="space-y-2 max-w-6xl mx-auto sm:py-6 py-3 sm:my-6 my-4">
-                                <h2 className="text-3xl font-semibold text-foreground sm:my-4 my-2 transition-colors hover:text-[#329C34]">
+                            <div className="space-y-2 max-w-6xl mx-auto sm:py-6 py-3 md:my-6 sm:my-4 my-2 px-4">
+                                <h2 className="md:text-3xl sm:text-2xl text-xl font-semibold text-foreground sm:my-4 my-2 transition-colors hover:text-[#329C34]">
                                     <Link href={`/blog/${post.slug}`}>{post.title}</Link>
                                 </h2>
-                                <p className="text-muted-foreground leading-relaxed">{post.excerpt}</p>
+                                <p className="  leading-relaxed md:text-base text-sm">{post.excerpt}</p>
                                 <div className="pt-2">
                                     <Link href={`/blog/${post.slug}`}>
                                         <Button variant="ghost" className="text-green-600 hover:text-green-700 hover:bg-transparent p-0 h-auto font-semibold cursor-pointer">

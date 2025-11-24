@@ -76,7 +76,7 @@ const products = [
 const page = () => {
     return (
         <section className="w-full py-4 px-4 md:px-6 lg:px-8 bg-background">
-            <div className="max-w-7xl mx-auto">
+            <div className="max-w-7xl mx-auto md:mb-12 sm:mb-8 mb-6">
                 {/* Section Title */}
                 <h2 className="text-3xl md:text-4xl font-medium text-foreground text-center my-12">
                     Select Product Category

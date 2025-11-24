@@ -77,7 +77,7 @@ export function ContactForm() {
                         
                         render={({ field }) => (
                             <FormItem>
-                                <FormLabel className="text-base font-thin text-muted-foreground">
+                                <FormLabel className="text-base font-thin ">
                                     Full Name <span className="text-destructive">*</span>
                                 </FormLabel>
                                 <FormControl>
@@ -93,7 +93,7 @@ export function ContactForm() {
                         name="email"
                         render={({ field }) => (
                             <FormItem>
-                                <FormLabel className="text-base font-thin text-muted-foreground mt-3">
+                                <FormLabel className="text-base font-thin mt-3">
                                     Email Address <span className="text-destructive">*</span>
                                 </FormLabel>
                                 <FormControl>
@@ -109,7 +109,7 @@ export function ContactForm() {
                         name="contactNumber"
                         render={({ field }) => (
                             <FormItem>
-                                <FormLabel className="text-base font-thin text-muted-foreground mt-3">Phone Number</FormLabel>
+                                <FormLabel className="text-base font-thin mt-3">Phone Number</FormLabel>
                                 <FormControl>
                                     <Input type="tel" placeholder=" " {...field} className="h-12 rounded-none text-base" />
                                 </FormControl>
@@ -124,7 +124,7 @@ export function ContactForm() {
                         name="message"
                         render={({ field }) => (
                             <FormItem>
-                                <FormLabel className="text-base font-thin text-muted-foreground mt-3">
+                                <FormLabel className="text-base font-thin mt-3">
                                     Message <span className="text-destructive">*</span>
                                 </FormLabel>
                                 <FormControl>

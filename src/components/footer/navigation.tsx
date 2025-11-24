@@ -19,7 +19,7 @@ export function Navigation() {
                     <Link
                         key={item.href}
                         href={item.href}
-                        className="text-green-400 font-normal text-sm md:text-base hover:text-green-700 transition-colors"
+                        className="text-[#20A20B] font-normal text-sm hover:text-green-700 transition-colors"
                     >
                         {item.label}
                     </Link>
@@ -27,7 +27,7 @@ export function Navigation() {
 
             </div>
             <div className="text-center mb-3">
-                <p className=' text-slate-400 font-light'>Copyright © Farm To Market Philippines</p>
+                <p className='text-sm text-[#7A7A7A] font-normal'>Copyright © Farm To Market Philippines</p>
             </div>
 
         </>

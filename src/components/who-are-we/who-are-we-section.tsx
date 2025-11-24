@@ -5,21 +5,21 @@ import image1 from '@/assets/home/field.jpg'
 import image2 from '@/assets/home/rice.jpg'
 export function WhoAreWeSection() {
     return (
-        <section className="w-full py-16 mx-auto flex justify-center">
-            <div className="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col justify-center h-full">
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-16">
-                    {/* Left Column - Text Content */}
+        <section className="w-full py-8 sm:py-12 lg:py-16 mx-auto flex justify-center">
+            <div className="max-w-7xl mx-auto px-10 lg:px-8 flex flex-col justify-center h-full">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[1.7fr_1.2fr_1.2fr] gap-12 lg:gap-16">
+                    {/* Text Column */}
                     <div className="flex flex-col justify-start space-y-6">
-                        <h1 className="text-2xl md:text-3xl font-semibold text-[#272727] mt-[15px] mb-6">
+                        <h1 className="text-2xl md:text-3xl md:text-[32px] font-semibold text-[#272727] lg:mt-[15px] mb-6">
                             Who Are We?
                         </h1>
 
-                        <div className="space-y-4 text-base md:text-lg leading-relaxed text-muted-foreground text-justify">
+                        <div className=" text-sm md:text-base lg:text-md text-[#666666] text-justify">
                             <p>
                                 Farm To Market Philippines is an agri-tech platform where members can invest in farming to increase local food production and receive profits from their investments. Members can also sell their farm-related products through this platform.
                             </p>
 
-                            <p>
+                            <p className="my-2 lg:my-4">
                                 Our country has vast farmlands that remain untapped because their owners lack sufficient funds to start farming. This has lead to food shortages and it forces our government to import farm products from foreign markets.
                             </p>
 
@@ -29,8 +29,7 @@ export function WhoAreWeSection() {
                         </div>
                     </div>
 
-                    {/* Right Column - Feature Cards */}
-
+                    {/* Feature Cards */}
                     <FeatureCard
                         title="INCREASE FOOD PRODUCTION"
                         imageSrc={image1.src}
@@ -44,6 +43,7 @@ export function WhoAreWeSection() {
                     />
                 </div>
             </div>
+
         </section>
     )
 }
