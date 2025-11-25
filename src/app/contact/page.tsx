@@ -11,7 +11,7 @@ export default function Home() {
         subtitle=""
         backgroundImage={bgHero.src} // Path to your image
       />
-      <div className="grid grid-cols-1 md:grid-cols-2 my-2 max-w-7xl mx-auto px-4 md:px-8 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 my-2 max-w-7xl mx-auto px-4 md:px-8 gap-8 pt-6">
         <div className="mb-5 flex flex-col items-center justify-center text-center">
           <Image width={200} height={200} src={Logo1.src} alt="logo-med" />
           {/* Main Heading */}
@@ -26,7 +26,7 @@ export default function Home() {
             <p className="text-sm">Phone: 09651986520</p>
           </div>
         </div>
-        <div className="my-3 px-4 flex justify-center">
+        <div className="my-3 px-4 flex justify-center ">
           <ContactForm />
         </div>
       </div>

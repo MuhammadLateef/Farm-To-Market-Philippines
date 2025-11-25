@@ -17,10 +17,10 @@ const SellPage = () => {
                     <a href="#">
                         <button
                             className="
-      md:text-3xl sm:text-2xl text-xl uppercase font-semibold text-white sm:px-14 px-18 py-4 rounded-full cursor-pointer my-6
+       sm:text-2xl text-xl uppercase font-semibold text-white sm:px-14 px-18 py-4 rounded-full cursor-pointer my-6
       bg-gradient-to-b from-[#429929] to-[#519437]
       transition-all duration-300 ease-out
-      hover:from-green-600 hover:to-green-800
+      hover:from-green-600 hover:to-green-800 tracking-tight
       active:scale-95
     " >
                             Register for Free

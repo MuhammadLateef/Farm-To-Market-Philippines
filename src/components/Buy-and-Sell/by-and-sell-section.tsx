@@ -78,9 +78,9 @@ const products = [
 function BuyAndSellSection() {
   return (
     <section className="w-full py-4 px-4 md:px-6 lg:px-8 bg-background">
-      <div className="max-w-7xl mx-auto mb-9">
+      <div className="max-w-7xl mx-auto sm:mb-9 mb-6">
         {/* Section Title */}
-        <h2 className="text-2xl sm:text-[32px] font-semibold text-[#272727] mt-12 mb-12 ">
+        <h2 className="text-[32px] font-semibold text-[#272727] mb-12 sm:text-start text-center lg:mt-12">
           Buy & Sell
         </h2>
         {/* Products Grid */}

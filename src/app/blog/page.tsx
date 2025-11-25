@@ -15,15 +15,15 @@ const blogPosts = [
     },
     {
         slug: 'vertical-farming-benefits',
-        title: 'Vertical Farming Benefits',
-        excerpt: 'Discover how vertical farming is revolutionizing agriculture. Learn about the space-saving advantages, increased yields, and environmental benefits of growing crops vertically in urban areas...',
+        title: 'Joke: Texas Farmer Visits Australia',
+        excerpt: 'A Texas farmer visits Australia. While driving, he sees a farmer and stops to discuss farm stuff. The Texan exclaims: “This is a nice farm but in Texas they are much bigger”. The Australian shows him his herds of cows and sheep, “Very nice too but in Texas the animals are bigger and the herds are larger”. Then 2 kangaroos …',
         image: Blog3,
         date: '2024-01-10'
     },
     {
         slug: 'sustainable-agriculture-future',
-        title: 'The Future of Sustainable Agriculture',
-        excerpt: 'Explore emerging technologies and practices that are shaping the future of sustainable farming. From precision agriculture to renewable energy integration, learn how innovation is transforming the industry...',
+        title: 'Is Farming a Good Profession?',
+        excerpt: 'Introduction Farming is a modest yet noble job. Without farmers, the whole world will starve to death. Being someone who contributes to the production of food that feeds your fellowman is very fulfilling. Farming has been an entire profession throughout human history, providing essential sustenance for civilizations. In today’s rapidly changing world where technology and industries dominate, the question arises: …',
         image: Blog1,
         date: '2024-01-05'
     }
@@ -34,8 +34,8 @@ export default function BlogPage() {
         <main className="min-h-screen bg-background">
             {/* Header */}
             <div className=" mt-6 text-center">
-                <h1 className="lg:text-5xl md:text-3xl  text-2xl font-semibold tracking-tight text-foreground mt-4 mb-4">The Blog</h1>
-                <p className="  max-w-2xl mx-auto sm:text-lg text-base sm:px-0 px-8">
+                <h1 className=" text-5xl font-semibold tracking-tight text-foreground mt-4 mb-4">The Blog</h1>
+                <p className="  max-w-2xl mx-auto  text-lg   sm:px-0 px-8">
                     Welcome to our little corner of the Internet. Kick your feet up and stay a while.
                 </p>
             </div>

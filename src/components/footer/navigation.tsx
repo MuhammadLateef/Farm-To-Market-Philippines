@@ -14,12 +14,12 @@ const navItems = [
 export function Navigation() {
     return (
         <>
-            <div className="flex items-center justify-center gap-8 py-6 px-4">
+            <div className="flex items-center justify-center sm:gap-8 gap-3 py-6 sm:px-4 px-3">
                 {navItems.map((item) => (
                     <Link
                         key={item.href}
                         href={item.href}
-                        className="text-[#20A20B] font-normal text-sm hover:text-green-700 transition-colors"
+                        className="text-[#20A20B] sm:text-base text-sm font-normal hover:text-green-700 transition-colors"
                     >
                         {item.label}
                     </Link>

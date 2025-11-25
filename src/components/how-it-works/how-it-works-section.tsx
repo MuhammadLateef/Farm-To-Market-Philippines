@@ -36,24 +36,24 @@ function HowItWorksSection() {
     <section className="w-full bg-white pb-0">
       {/* Section Title */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-2xl sm:text-[32px] font-semibold text-[#272727] mt-12 sm:mt-16 mb-8 sm:mb-12 lg:mb-26">
+        <h2 className=" text-[32px] font-semibold text-[#272727] tracking-tighter mt-12 sm:mt-16 mb-28 sm:mb-12 lg:mb-26">
           How Does It Work?
         </h2>
       </div>
 
       {/* Green Background Section */}
-      <div className="relative sm:bg-[#20A20B] md:bg-[#20A20B] pb-6 md:pb-4 lg:pb-6">
+      <div className="relative sm:bg-[#178a05] md:bg-[#178a05] pb-6 md:pb-4 lg:pb-6">
         <div className="max-w-7xl mx-auto px-0 sm:px-6 lg:px-0">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 ">
             {steps.map((step, index) => (
               <div
                 key={step.id}
-                className={`flex flex-col items-center px-4 sm:px-6 py-6 sm:py-8 bg-[#20A20B] ${index === 2 ? 'sm:col-span-2 lg:col-span-1' : ''
+                className={`flex flex-col items-center px-4 mx-4 sm:px-6 py-6 sm:py-8 bg-[#178a05] mb-18 ${index === 2 ? 'sm:col-span-2 lg:col-span-1' : ''
                   }`}
               >
                 {/* Icon Circle */}
-                <div className="relative bg-white rounded-full flex items-center justify-center shadow-lg -mt-16 sm:-mt-20 md:-mt-24 lg:-mt-28 mb-4 sm:mb-6">
-                  <div className="relative lg:w-[195px] lg:h-[195px] ">
+                <div className="relative bg-white rounded-full flex items-center justify-center shadow-lg -mt-26 sm:-mt-20 md:-mt-24 lg:-mt-28 mb-4 sm:mb-6">
+                  <div className="relative w-[195px] h-[195px] ">
                     <Image
                       width={300}
                       height={300}
@@ -65,12 +65,12 @@ function HowItWorksSection() {
                 </div>
 
                 {/* Step Title */}
-                <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold text-[#FFFFFF] mb-2 sm:mb-3 tracking-wide text-center">
+                <h3 className="text-2xl font-semibold tracking-tighter text-[#FFFFFF] mb-2 sm:mb-3 text-center">
                   {step.title}
                 </h3>
 
                 {/* Step Description */}
-                <p className="text-white text-sm lg:text-base text-center mx-auto">
+                <p className="text-white text-sm lg:text-base text-center mx-auto tracking-tighter lg:px-0 px-6 sm:leading-normal leading-7">
                   {step.description}
                 </p>
               </div>

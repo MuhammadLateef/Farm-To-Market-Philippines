@@ -17,7 +17,7 @@ function Navbar() {
 
     return (
         <nav className="bg-white border-b border-gray-200 shadow-lg">
-            <div className="max-w-7xl mx-auto ">
+            <div className="max-w-7xl mx-auto lg:px-0 px-4 sm:px-6 ">
                 <div className="flex justify-between items-center h-30">
                     {/* Logo */}
                     <Image
@@ -26,7 +26,7 @@ function Navbar() {
                         height={150}
                         src={NavLogo}
                         alt='logo'
-                        className="cursor-pointer object-contain md:h-20 sm:h-16 h-12 w-auto"
+                        className="cursor-pointer object-contain h-16 w-auto"
                     />
 
                     {/* Desktop Navigation */}
@@ -37,14 +37,14 @@ function Navbar() {
                     {/* Mobile Menu Button */}
                     <button
                         onClick={toggleMenu}
-                        className="md:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:bg-gray-100 transition-colors"
+                        className="md:hidden inline-flex items-center justify-center p-2 shadow-sm rounded-md text-gray-500 hover:bg-gray-100 transition-colors "
                         aria-label="Toggle menu"
                         aria-expanded={isOpen}
                     >
                         {isOpen ? (
-                            <X className="h-6 w-6" />
+                            <X className="h-8 w-8 text-gray-400" />
                         ) : (
-                            <Menu className="h-6 w-6" />
+                            <Menu className="h-8 w-8 text-gray-400  " />
                         )}
                     </button>
                 </div>

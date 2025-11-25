@@ -59,7 +59,7 @@ export function ContactForm() {
     }
 
     return (
-        <Card className="w-full max-w-5xl p-8 shadow-none border-none">
+        <Card className="w-full lg:max-w-5xl sm:p-8 p-4 shadow-none border-none">
 
             {submitSuccess && (
                 <div className="mb-6 p-4 bg-green-50 dark:bg-green-950 border border-green-200 dark:border-green-800 rounded-lg">

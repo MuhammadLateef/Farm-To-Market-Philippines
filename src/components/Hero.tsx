@@ -10,7 +10,7 @@ interface HeroProps {
 const Hero: React.FC<HeroProps> = ({ title, subtitle, backgroundImage }) => {
   return (
     <div
-      className="relative w-full h-[450px] bg-cover bg-center flex items-center justify-center"
+      className="relative w-full h-[430px] bg-cover bg-center flex items-center justify-center"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <div className="absolute inset-0 bg-black opacity-10"></div> 

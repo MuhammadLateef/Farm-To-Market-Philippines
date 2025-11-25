@@ -89,13 +89,14 @@ export default function CommentForm() {
     <form onSubmit={handleSubmit} className="space-y-6 max-w-6xl">
       {/* Comment Textarea */}
       <div className="space-y-2">
-        <Label htmlFor="comment" className="text-base font-normal mb-5 text-foreground">
-          Your email address will not be published. Required fields are marked <span className="text-destructive">*</span>
+        <p>Your email address will not be published. Required fields are marked</p>
+        <Label htmlFor="comment" className="text-xl sm:my-6 my-3 font-semibold text-foreground">
+          Comment <span className="text-destructive">*</span>
         </Label>
         <Textarea
           id="comment"
           name="comment"
-          placeholder="Share your thoughts..."
+          placeholder=" "
           value={formData.comment}
           onChange={handleInputChange}
           className={`min-h-48 resize-vertical ${errors.comment ? 'border-destructive' : ''}`}
@@ -109,14 +110,14 @@ export default function CommentForm() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
         {/* Name Field */}
         <div className="space-y-2">
-          <Label htmlFor="name" className="text-xl my-6 font-semibold text-foreground ">
+          <Label htmlFor="name" className="text-xl sm:my-6 my-3 font-semibold text-foreground ">
             Name <span className="text-destructive">*</span>
           </Label>
           <Input
             id="name"
             name="name"
             type="text"
-            placeholder="Your name"
+            placeholder="Your Name"
             value={formData.name}
             onChange={handleInputChange}
             className={`min-h-16 ${errors.name ? 'border-destructive' : ''} `}
@@ -128,14 +129,14 @@ export default function CommentForm() {
 
         {/* Email Field */}
         <div className="space-y-2">
-          <Label htmlFor="email" className="text-xl my-6 font-semibold text-foreground  ">
+          <Label htmlFor="email" className="text-xl sm:my-6 my-3 font-semibold text-foreground  ">
             Email <span className="text-destructive">*</span>
           </Label>
           <Input
             id="email"
             name="email"
             type="email"
-            placeholder="your.email@example.com"
+            placeholder="Your Email"
             value={formData.email}
             onChange={handleInputChange}
             className={`min-h-16 ${errors.name ? 'border-destructive' : ''} `}
@@ -148,14 +149,14 @@ export default function CommentForm() {
 
       {/* Website Field */}
       <div className="space-y-2">
-        <Label htmlFor="website" className="text-xl my-6 font-semibold text-foreground ">
+        <Label htmlFor="website" className="text-xl  sm:my-6 my-3 font-semibold text-foreground ">
           Website <span className="text-muted-foreground text-sm">(optional)</span>
         </Label>
         <Input
           id="website"
           name="website"
           type="url"
-          placeholder="https://example.com"
+          placeholder="Your Website"
           value={formData.website}
           onChange={handleInputChange}
           className={`min-h-16 ${errors.name ? 'border-destructive' : ''} `}
@@ -171,9 +172,9 @@ export default function CommentForm() {
           id="saveInfo"
           checked={formData.saveInfo}
           onCheckedChange={handleCheckboxChange}
-          className='w-8 h-8'
+          className='sm:w-8 sm:h-8 w-4 h-4'
         />
-        <Label htmlFor="saveInfo" className="font-normal text-foreground cursor-pointer text-sm my-6 ">
+        <Label htmlFor="saveInfo" className="font-normal text-foreground cursor-pointer text-sm  sm:my-6 my-3 ">
          &nbsp; Save my name, email, and website in this browser for the next time I comment.
         </Label>
       </div>
@@ -182,7 +183,7 @@ export default function CommentForm() {
       <div className="flex items-center gap-4 text-xl my-6 ">
         <Button
           type="submit"
-          className="bg-green-500 hover:bg-green-700 text-white cursor-pointer"
+          className=" bg-[#178a05] text-white cursor-pointer px-4 py-6"
         >
          Submit
         </Button>
